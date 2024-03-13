@@ -1,4 +1,4 @@
-name: 2fauth
+name: 2fauth1
 services:
   2fauth:
     image: 2fauth/2fauth:5.0.4
@@ -15,24 +15,24 @@ services:
     volumes:
       - type: bind
         source: /DATA/AppData/$AppID
-        target: /2fauth
+        target: /2fauth1
     x-casaos:
       ports:
         - container: "8000"
           description:
             en_us: ""
       volumes:
-        - container: /2fauth
+        - container: /2fauth1
           description:
             en_us: ""
-    container_name: 2fauth
+    container_name: 2fauth1
 x-casaos:
   architectures:
     - amd64
     - "386"
     - arm64
     - arm
-  main: 2fauth
+  main: 2fauth1
   author: CasaOS Team
   category: Utilities
   description:
@@ -72,6 +72,6 @@ x-casaos:
   thumbnail: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/2FAuth/thumbnail.png
   tips: {}
   title:
-    en_us: 2FAuth
+    en_us: 2FAuth1
   index: /
   port_map: "8000"
