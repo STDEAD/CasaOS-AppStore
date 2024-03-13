@@ -1,7 +1,7 @@
 {
 	"version": "2.0",
-	"title": "2FAuth",
-	"name": "2fauth",
+	"title": "2FAuth1",
+	"name": "2fauth1",
 	"icon": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/2FAuth/icon.png",
 	"tagline": "A web app to manage your Two-Factor Authentication (2FA) accounts and generate their security codes",
 	"overview": "2FAuth is a web based self-hosted alternative to One Time Passcode (OTP) generators like Google Authenticator, designed for both mobile and desktop.",
@@ -29,7 +29,7 @@
 	"support": "https://discord.gg/knqAbbBbeX",
 	"website": "",
 	"container": {
-		"image": "2fauth/2fauth:latest",
+		"image": "2fauth/2fauth:5.0.4",
 		"shell": "sh",
 		"privileged": false,
 		"network_model": "bridge",
@@ -51,7 +51,7 @@
 		],
 		"volumes": [
 			{
-				"container": "/2fauth",
+				"container": "/2fauth1",
 				"host": "/DATA/AppData/$AppID",
 				"mode": "rw",
 				"allocation": "automatic",
